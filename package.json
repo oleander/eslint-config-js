@@ -10,9 +10,9 @@
   "author": "Linus Oleander",
   "license": "MIT",
   "homepage": "https://github.com/oleander/eslint-config-js",
-  "repository": { 
-    "type" : "git",
-    "url" : "https://github.com/oleander/eslint-config-js.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oleander/eslint-config-js.git"
   },
   "dependencies": {
     "babel-eslint": "^7.0.0",

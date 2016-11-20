@@ -1,3 +1,1 @@
-# ESLint
-
-My eslint config
+../README.md

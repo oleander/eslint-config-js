@@ -1,7 +1,7 @@
 module.exports = {
   "extends": ["google"],
   "parser": "babel-eslint",
-  "plugins": ["flowtype", "babel", "mocha"],
+  "plugins": ["flowtype", "babel", "mocha", "promise", "dependencies"],
   "rules": {
     "no-sync": 1,
     "consistent-return": 0,
@@ -29,8 +29,16 @@ module.exports = {
     "mocha/handle-done-callback": "error",
     "mocha/no-identical-title": "error",
     "flowtype/require-valid-file-annotation": [2, "always"],
-    "no-unused-expressions": 0,
-    "max-len": ["error", 100]
+    "max-len": ["error", 100],
+    "comma-dangle": [ "error", "never" ],
+    "dependencies/no-cycles": 1,
+    "flowtype/type-id-match": 0,
+    "promise/no-return-wrap": 2,
+    "promise/param-names": 2,
+    "promise/no-native": 0,
+    "no-unused-expressions": ["warn"],
+    "no-unused-vars": ["warn"],
+    "semi": ["error", "always"]
   },
   "settings": {
     "flowtype": {
@@ -39,6 +47,7 @@ module.exports = {
   },
   "parserOptions": {
     "ecmaVersion": 7,
+    "sourceType": "module",
     "ecmaFeatures": {
       "modules": true
     }
